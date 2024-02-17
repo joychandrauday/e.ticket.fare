@@ -1,0 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+.font-raleway{
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+.banner{
+  background-image: url('/images/banner.png');
+  height: 80vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 18px;
+}
+
+.bannerCards{
+  bottom: -195px;
+}
+.kbd{
+  cursor: pointer;
+  padding: 8px 35px !important;
+  margin: 0 0 5px;
+}
