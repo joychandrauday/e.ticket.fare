@@ -80,11 +80,8 @@ for (let i = 0; i < seatButtons.length; i++) {
 //pasanger check
 const inputNumberText = document.getElementById('phoneNumber');
 const inputNumber = inputNumberText.value;
-// console.log(inputName,inputNumber,nextBtn)
-const inputNameText = document.getElementById('passangerName');
-const inputName = inputNameText.value;
 
-inputNameText.addEventListener('keyup', function () {
+inputNumberText.addEventListener('keyup', function () {
     let nextBtn = document.getElementById('finalPageBtn');
     if (inputNumber != " ") {
         nextBtn.removeAttribute('disabled');
