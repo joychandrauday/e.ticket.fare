@@ -102,11 +102,11 @@
                         <img src="images/cupon-devider.png" alt="">
                     </div>
                     <div class="couponText2 pr-8">
-                        <h2 class="text-black font-extrabold text-3xl">NEW15</h2>
+                        <h2 id="coupon1" class="couponCode text-black font-extrabold text-3xl cursor-pointer">NEW15</h2>
                         <p>coupon code</p>
                     </div>
                 </div>
-                <div class="couponIndi  bg-[#F78C9C] flex gap-4 justify-center items-center rounded-2xl">
+                <div class="couponIndi  bg-[#F78C9C] flex gap-4 justify-center items-center rounded-2xl ">
                     <div class="couponText1 p-5 px-12 basis-2/3">
                         <h2 class="text-black font-extrabold text-4xl">20% OFF</h2>
                         <p class="capitalize text-gray-600 mt-4">on your next purchase</p>
@@ -116,7 +116,7 @@
                         <img src="images/cupon-devider.png" alt="">
                     </div>
                     <div class="couponText2 pr-8">
-                        <h2 class="text-black font-extrabold text-3xl capitalize">couple20</h2>
+                        <h2 id="coupon2" class="couponCode text-black font-extrabold text-3xl capitalize cursor-pointer" >couple20</h2>
                         <p>coupon code</p>
                     </div>
                 </div>
@@ -209,6 +209,7 @@
                         <p>A</p>
                         <kbd class="kbd seatBtn">A1</kbd>
                         <kbd class="kbd seatBtn">A2</kbd>
+                        <div class="w-4"></div>
                         <kbd class="kbd seatBtn">A3</kbd>
                         <kbd class="kbd seatBtn">A4</kbd>
                     </div>
@@ -216,6 +217,7 @@
                         <p>B</p>
                         <kbd class="kbd seatBtn">B1</kbd>
                         <kbd class="kbd seatBtn">B2</kbd>
+                        <div class="w-4"></div>
                         <kbd class="kbd seatBtn">B3</kbd>
                         <kbd class="kbd seatBtn">B4</kbd>
                     </div>
@@ -223,6 +225,7 @@
                         <p>C</p>
                         <kbd class="kbd seatBtn">C1</kbd>
                         <kbd class="kbd seatBtn">C2</kbd>
+                        <div class="w-4"></div>
                         <kbd class="kbd seatBtn">C3</kbd>
                         <kbd class="kbd seatBtn">C4</kbd>
                     </div>
@@ -230,6 +233,7 @@
                         <p>D</p>
                         <kbd class="kbd seatBtn">D1</kbd>
                         <kbd class="kbd seatBtn">D2</kbd>
+                        <div class="w-4"></div>
                         <kbd class="kbd seatBtn">D3</kbd>
                         <kbd class="kbd seatBtn">D4</kbd>
                     </div>
@@ -237,6 +241,7 @@
                         <p>E</p>
                         <kbd class="kbd seatBtn">E1</kbd>
                         <kbd class="kbd seatBtn">E2</kbd>
+                        <div class="w-4"></div>
                         <kbd class="kbd seatBtn">E3</kbd>
                         <kbd class="kbd seatBtn">E4</kbd>
                     </div>
@@ -244,6 +249,7 @@
                         <p>F</p>
                         <kbd class="kbd seatBtn">F1</kbd>
                         <kbd class="kbd seatBtn">F2</kbd>
+                        <div class="w-4"></div>
                         <kbd class="kbd seatBtn">F3</kbd>
                         <kbd class="kbd seatBtn">F4</kbd>
                     </div>
@@ -251,6 +257,7 @@
                         <p>G</p>
                         <kbd class="kbd seatBtn">G1</kbd>
                         <kbd class="kbd seatBtn">G2</kbd>
+                        <div class="w-4"></div>
                         <kbd class="kbd seatBtn">G3</kbd>
                         <kbd class="kbd seatBtn">G4</kbd>
                     </div>
@@ -258,6 +265,7 @@
                         <p>H</p>
                         <kbd class="kbd seatBtn">H1</kbd>
                         <kbd class="kbd seatBtn">H2</kbd>
+                        <div class="w-4"></div>
                         <kbd class="kbd seatBtn">H3</kbd>
                         <kbd class="kbd seatBtn">H4</kbd>
                     </div>
@@ -265,6 +273,7 @@
                         <p>I</p>
                         <kbd class="kbd seatBtn">I1</kbd>
                         <kbd class="kbd seatBtn">I2</kbd>
+                        <div class="w-4"></div>
                         <kbd class="kbd seatBtn">I3</kbd>
                         <kbd class="kbd seatBtn">I4</kbd>
                     </div>
@@ -272,6 +281,7 @@
                         <p>J</p>
                         <kbd class="kbd seatBtn">J1</kbd>
                         <kbd class="kbd seatBtn">J2</kbd>
+                        <div class="w-4"></div>
                         <kbd class="kbd seatBtn">J3</kbd>
                         <kbd class="kbd seatBtn">J4</kbd>
                     </div>
@@ -281,7 +291,7 @@
                 <h3 class="capitalize font-bold text-black text-xl border-b-2 border-dashed border-y-gray-300 pb-4">Your Selected Seat</h3>
                 <div class="selectedSeatSection bg-[#F7F8F8] p-4 rounded-lg">
                     <div class="selectedSeatTop capitalize flex justify-between font-bold border-gray-300 border-b-2 border-dashed pb-4 mb-4">
-                        <h4>seat <span id="selectedSeatCount"></span></h4>
+                        <h4>seat <span id="selectedSeatCount" class="text-white p-2 rounded-lg"></span></h4>
                         <h4>class</h4>
                         <h4>price</h4>
                     </div>
@@ -289,27 +299,41 @@
                         
                     </div>
                     <div class="totalPriceSEction capitalize flex justify-between border-gray-300 border-t-2 border-solid mt-4 pt-2">
-                        <h1 class="capitalize font-semibold text-xl">total prize</h1>
-                        <h1 id="totalPrizeArea" class="capitalize font-semibold text-xl">0</h1>
+                        <h1 class="capitalize font-semibold text-xl">total price</h1>
+                        <h1 id="totalPrizeArea" class="capitalize font-semibold text-xl">0 taka</h1>
                     </div>
                     <div class="couponSection my-4 relative">
                         <input id="couponEnter" type="text" placeholder="have a coupon?" class="p-4 capitalize rounded-xl w-full" disabled>
                         <a class="btn bg-[#1DD100] absolute capitalize font-bold right-0 top-1 rounded-xl px-8" onclick="validCouponDetection()">apply</a>
                     </div>
-                    <p id="gottedDiscount">you have got 300 tk discount</p>
+                    <div class="discountedPrice flex">
+                        <p>you have got a discount of tk.</p><p id="gottedDiscount">o.</p>
+                    </div>
                     <div class="totalPriceSEction capitalize flex justify-between mt-4 pt-2">
                         <h1 class="capitalize font-semibold text-xl">grand total</h1>
-                        <h1 id="grandTotalArea" class="capitalize font-semibold text-2xl"></h1>
+                        <h1 id="grandTotalArea" class="capitalize font-semibold text-2xl">0 taka.</h1>
                     </div>
                 </div>
                 <div class="passengerDetails mt-8">
                     <h2 class="capitalize font-bold mb-2">passanger name*</h2>
-                    <input id="passangerName" type="text" placeholder="enter your name" class="p-4 mb-4 border-gray-500 border capitalize w-full rounded-xl">
+                    <input id="passangerName" type="text" placeholder="enter your name" class="inputValidate p-4 mb-4 border-gray-500 border capitalize w-full rounded-xl">
                     <h2 class="capitalize font-bold mb-2">phone number*</h2>
-                    <input id="phoneNumber" type="number" placeholder="enter phone number" class="p-4 mb-4 border-gray-500 border capitalize w-full rounded-xl">
+                    <input id="phoneNumber" type="number" placeholder="enter phone number" class="inputValidate p-4 mb-4 border-gray-500 border capitalize w-full rounded-xl">
                     <h2 class="capitalize font-bold mb-2">email address</h2>
                     <input type="email" placeholder="enter your email" class="p-4 mb-4 border-gray-500 border capitalize w-full rounded-xl">
-                    <button id="finalPageBtn" class="btn bg-[#1DD100] capitalize font-bold rounded-xl w-full text-white"  >next</button>
+                    <button id="finalPageBtn" class="btn bg-[#1DD100] capitalize font-bold rounded-xl w-full text-white" disabled onclick="my_modal_3.showModal()" >next</button>
+                    <!-- You can open the modal using ID.showModal() method -->
+                    <dialog id="my_modal_3" class="modal">
+                    <div class="modal-box">
+                        <form method="dialog">
+                        </form>
+                        <div class="modalBody capitalize font-bold flex flex-col items-center  gap-4 p-4">
+                            <img src="images/success.png" alt="">
+                            <h3 class="font-bold-capitalize">thank you for travling with us. have a safe and exciting journey.</h3>
+                            <button class="btn w-full btn-circle btn-ghost capitalize">purchase more</button>
+                        </div>
+                    </div>
+                    </dialog>
                 </div>
                 <div class="termsCondition flex justify-around mt-4">
                     <a href="#" class="underline capitalize text-gray-400">terms and condition</a>
