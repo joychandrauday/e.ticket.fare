@@ -110,12 +110,14 @@ function validCouponDetection() {
             newElementValueUpdate('gottedDiscount', gottedDiscount)
             newElementValueUpdate('grandTotalArea', calculateDiscountPrice + ' taka');
 
+            coupon.value='';
         } else if (couponText === 'Couple20') {
             const totalPrice = valueFromId('totalPrizeArea');
             const calculateDiscountPrice = calculateDiscount(totalPrice, 20);
             const gottedDiscount = totalPrice - calculateDiscountPrice
             newElementValueUpdate('gottedDiscount', gottedDiscount)
             newElementValueUpdate('grandTotalArea', calculateDiscountPrice + ' taka');
+            coupon.value='';
         }
 
     } else {

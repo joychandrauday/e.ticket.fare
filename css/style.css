@@ -28,3 +28,14 @@ html{
   padding: 8px 35px !important;
   margin: 0 0 10px;
 }
+@media (min-width: 768px){
+  .container {
+    
+  }
+  .banner{
+    max-width: 95% !important;
+    margin: 0 auto;
+    padding: 25px;
+  }
+  
+}
